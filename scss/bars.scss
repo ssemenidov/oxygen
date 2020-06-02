@@ -1,0 +1,35 @@
+.bars {
+  max-width: 370px;
+  width: 33%;
+}
+.bar {
+  padding-bottom: 1em;
+  &-line {
+    width: 100%;
+    height: 1px;
+    background: #f0f0f0;
+    position: relative;
+  }
+  &-line:after {
+    content: "";
+    width: 85%;
+    height: 1px;
+    background: #1d1d1d;
+    position: absolute;
+  }
+  &-content {
+    font-size: 0.8rem;
+    color: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+    letter-spacing: 1px;
+  }
+  &-content:before {
+  }
+}
+@media screen and (max-width: 426px) {
+  .bars {
+    width: 60%;
+  }
+}

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-width: 320px;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin-bottom: 1em;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.hcontainer {
+  padding: 150px 0;
+}
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    width: 85%;
+  }
+  .hcontainer {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 426px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    width: 90%;
+  }
+  .hcontainer {
+    padding: 50px 0;
+  }
+}
